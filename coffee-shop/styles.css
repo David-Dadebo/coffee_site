@@ -1,0 +1,284 @@
+:root {
+/*colors that are being used for the ptoject*/
+--cream: #F6EFE6;
+  --white: #FFFFFF;
+  --espresso: #3B2A20;
+  --caramel: #C8773A;
+  --muted-brown: #7A6A5E;
+  --border: #E6D8C6;
+
+
+  /*fonts that are being used for the project*/
+  --font-heading: 'lora', serif;
+  --font-body: 'inter', sans-serif;
+
+  /* spacing  and shapes */
+
+  --radius-card:22px;
+  --radius-pill: 50px;
+  --max-width: 1280px;
+  --padding-dexktop: 80px;
+  --padding-mobile: 24px;
+
+}
+
+* {
+    box-sizing: border-box;
+    
+}
+
+/*Global Reseets and base styles*/
+
+body {
+    background-color: var(--cream);
+    color: var(--espresso);
+    font-family: var(--font-body);
+    font-size: 16px;
+    line-height: 1.6;
+    margin: 0;
+
+}
+
+.container {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 0 var(--padding-dexktop);
+}
+
+h1, h2, h3, {
+    font-family: var(--font-heading);
+    font-weight: 700;
+    color: var(--espresso);
+    margin-top: 0;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+}
+
+/*first section of the page*/
+.header{
+    padding: 24px 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-family: var(--font-heading);
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--espresso);
+    text-decoration: none;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: var(--espresso);
+    font-weight: 500;
+    transition: color 0.2s ease;
+}
+
+.nav-links a:hover {
+    color: var(--caramel);
+}
+
+/* the first type of btn*/
+.btn-type1 {
+    background-color: var(--muted-brown);
+    color: var(--white);
+    padding: 12px 24px;
+    border-radius: var(--radius-pill);
+    text-decoration: none;
+    font-weight: 500;
+    transition: background-color 0.2s ease;
+}
+
+/*.btn-type1:hover {
+    background-color: var(--muted-brown)
+};*/
+
+/*hero section of the project*/
+.hero-container {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 120px var(--padding-dexktop);
+}
+
+.hero-leftside {
+
+}
+
+.hero-rightside {
+
+    position: relative;
+}
+
+.label {
+    display: inline-block;
+    color: var(--caramel);
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 16px;
+    letter-spacing: 1.5px;
+}
+
+h1 {
+    font-size: 60px;
+    margin-bottom: 24px;
+}
+   
+#hero p {
+    font-size: 20px;
+    margin-bottom: 32px;
+    color: var(--muted-brown);
+    max-width: 500px;
+}
+
+.hero-btns {
+    display: flex;
+    gap: 16px;
+}
+
+/*second type of btn*/
+.btn-type2 {
+    background-color: var(--caramel);
+    color: var(--white);
+    padding: 12px 24px;
+    border-radius: var(--radius-pill);
+    text-decoration: none;
+    font-weight: 600;
+    transition: background-color 0.2s ease;
+}
+
+/*.btn-type2:hover {
+  background-color: #b36830;
+}*/
+
+.btn-type3 {
+    background-color: var(--white);
+    color: var(--espresso);
+    padding: 12px 24px;
+    border-radius: var(--radius-pill);
+    text-decoration: none;
+    font-weight: 600;
+    transition: background-color 0.2s ease;
+    text-decoration: none;
+}
+
+.hero-rightside img {
+    width: 100%;
+    border-radius: var(--radius-card);
+    object-fit: cover;
+    height: 600px;
+}
+
+.hero-coffee-caption {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    background-color: var(--white);
+    padding: 8px 16px;
+    border-radius: var(--radius-pill);
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--espresso);
+    box-shadow: 0 2px 4px rgba(59, 42, 32, 0.1);
+}
+/* features section of the project*/
+.features-container {
+    padding: 120px var(--padding-dexktop);
+    background-color: var(--white);
+}
+
+.features-header {
+    text-align: center;
+    margin-bottom: 80px;
+    max-width: 100%;
+
+}
+
+.features-header h2 {
+    font-size: 40px;
+    margin-bottom: 16px;
+}
+
+.features-header p {
+    font-size: 18px;
+    color: var(--muted-brown);
+    margin: 0;
+}
+
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+}
+
+.feature-card {
+    background-color: var(--cream);
+    padding: 40px;
+    border-radius: var(--radius-card);
+    border: 1px solid var(--border);
+    
+}
+
+.roasted-beans{
+    width: 60px;
+    height: 60px;
+    background-color: var(--caramel);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 24px;
+}
+
+.roasted-beans img {
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+}
+
+
+.feature-card h3 {
+    font-size: 22px;
+    margin-bottom: 8px;
+
+}
+
+.feature-card p{
+    color: var(--muted-brown);
+    margin: 0;
+}
+
+
+/* Responsive design for mobile devices*/
+
+.container {
+    padding: 0 var(--padding-mobile);
+
+}
+
+/* Navigation for mobile*/
+.nav-links
+{
+    display: none;
+}
+
+/*Hero mobile */
+
+.hero-container {
+    
+}
